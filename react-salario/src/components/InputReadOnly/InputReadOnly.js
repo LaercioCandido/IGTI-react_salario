@@ -15,7 +15,7 @@ export default class InputReadOnly extends Component {
 			netSalary,
 		} = calculateSalaryFrom(fullSalary);
 
-		const formatter = new Intl.NumberFormat([], {
+		const formatter = new Intl.NumberFormat('pt-BR', {
 			style: 'currency',
 			currency: 'BRL'
 		})
@@ -37,15 +37,15 @@ export default class InputReadOnly extends Component {
 			<div>
 				<div className={css.container}>
 					<Inputs title={"Base INSS"} number={formatBaseINSS} />
-					<Inputs title={"Desconto INSS"} number={formatDiscountINSS} color={"#e67e22"} percent={percentDiscountINSS} />
+					<Inputs title={"Desconto INSS"} number={formatDiscountINSS} color={"#e67e22"} percent={percentDiscountINSS.replace('.',',')} />
 				</div>
 				<div className={css.container}>
 					<Inputs title={"Base IRPF"} number={formatBaseIRPF} />
-					<Inputs title={"Desconto IRPF"} number={formatDiscountIRPF} color={"#c0392b"} percent={percentDiscountIRPF} />
+					<Inputs title={"Desconto IRPF"} number={formatDiscountIRPF} color={"#c0392b"} percent={percentDiscountIRPF.replace('.',',')} />
 				</div>
 
 				<div className={css.salarioliquido}>
-					<Inputs title={"Salário Líquido"} number={formatNetSalary} color={"#16a085"} percent={percentNetSalary} />
+					<Inputs title={"Salário Líquido"} number={formatNetSalary} color={"#16a085"} percent={percentNetSalary.replace('.',',')} />
 				</div>
 
 				<div

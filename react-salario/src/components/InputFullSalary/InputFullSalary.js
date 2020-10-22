@@ -25,10 +25,12 @@ export default class InputFullSalary extends Component {
 					<span>Salário Bruto</span>
 					<input
 						placeholder="Escreva o salário bruto aqui"
+						autoFocus
 						type="number"
 						value={fullSalary}
 						onChange={this.handleFilter}
-						step="1"
+						
+						step="100"
 					/>
 				</div>
 					<InputReadOnly fullSalary={fullSalary} />
