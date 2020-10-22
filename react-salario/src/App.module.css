@@ -1,0 +1,16 @@
+.container {
+	width: 600px;
+	height: 600px;
+	margin: auto;
+	margin-top: 20px;
+	background-color: rgb(219, 242, 248, 0.7);
+	border-radius: 4%;
+	border-color: rgb(34, 149, 187);
+	border-width: 5px;
+	border-style: solid;
+}
+
+h2 {
+	text-align: center;
+	color:  rgb(34, 149, 187);
+}

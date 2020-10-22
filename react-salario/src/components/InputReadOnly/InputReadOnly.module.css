@@ -1,0 +1,12 @@
+.container {
+	display: flex;
+}
+
+.inputread {
+	width: 250px;
+	margin: 10px;
+}
+
+.salarioliquido {
+	margin-left: 55%;
+}
